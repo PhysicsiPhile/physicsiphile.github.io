@@ -1,215 +1,155 @@
-<!DOCTYPE HTML>
-<html>
-    <head>
-        <title>Lunar Photon</title>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-        <link rel="stylesheet" href="assets/css/main.css" />
-        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-    </head>
-    <body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chandra Prakash | Theoretical Physics</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;700;800&display=swap');
+        body { background-color: #030712; color: #94a3b8; font-family: 'Inter', sans-serif; }
+        .mono { font-family: 'JetBrains Mono', monospace; }
+        .section-header { color: #f8fafc; border-left: 3px solid #38bdf8; padding-left: 1rem; margin-bottom: 2rem; font-weight: 800; text-transform: uppercase; font-size: 0.7rem; letter-spacing: 0.2em; }
+        .glass-card { background: rgba(15, 23, 42, 0.4); border: 1px solid rgba(51, 65, 85, 0.3); transition: all 0.3s; }
+        .glass-card:hover { border-color: #38bdf8; background: rgba(15, 23, 42, 0.8); }
+        .math-hero { background: #020617; border: 1px solid #1e293b; padding: 1.5rem; border-radius: 0.75rem; color: #cbd5e1; }
+        .accent-link { color: #38bdf8; font-weight: 700; border-bottom: 1px solid transparent; transition: border 0.2s; }
+        .accent-link:hover { border-bottom-color: #38bdf8; }
+    </style>
+</head>
+<body class="p-6 md:p-12 lg:p-24 max-w-6xl mx-auto">
 
-        <section id="sidebar">
-            <div class="inner">
-                <nav>
-                    <ul>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#notes">Notes</a></li>
-                        <li><a href="#contact">Contact Me</a></li>
-                    </ul>
-                </nav>
+    <header class="mb-32">
+        <div class="flex flex-col md:flex-row justify-between items-start gap-12">
+            <div class="max-w-2xl">
+                <h1 class="text-6xl font-black text-white mb-6 tracking-tighter">Chandra Prakash</h1>
+                <p class="mono text-sky-500 text-sm uppercase tracking-[0.4em] mb-10">IIT Guwahati // Theoretical Physics</p>
+                <div class="space-y-6 text-lg text-slate-300 leading-relaxed">
+                    <p>
+                        I adopt a <span class="text-white font-bold italic">skeptical, questioning approach</span> to theoretical physics. I am motivated by a deep curiosity for understanding concepts in as much depth as possible, rather than accepting surface-level summaries.
+                    </p>
+                    <p>
+                        My work is built on the belief that science must be accessible. I maintain detailed notes where <span class="text-sky-400">derivations are explicit</span>—filling in the mathematical gaps often left "to the reader" in standard academic literature.
+                    </p>
+                </div>
             </div>
-        </section>
+            <div class="flex flex-col gap-4 text-[10px] font-bold uppercase tracking-widest pt-4">
+                <a href="https://inspirehep.net/authors/2545328" class="text-slate-500 hover:text-sky-400 transition">inspireHEP →</a>
+                <a href="https://scholar.google.com/citations?user=uaCF9ZEAAAAJ" class="text-slate-500 hover:text-sky-400 transition">Google Scholar →</a>
+                <a href="CV.pdf" class="text-white border-b border-sky-500 pb-1 w-fit">Curriculum Vitae</a>
+            </div>
+        </div>
+    </header>
 
-        <div id="wrapper">
+    <section class="mb-32">
+        <h2 class="section-header">Verified Publications</h2>
+        <div class="space-y-12">
+            
+            <div class="group">
+                <span class="mono text-[10px] text-sky-500 font-bold uppercase tracking-tighter">2025 // arXiv:2603.24635</span>
+                <h3 class="text-2xl font-bold text-white mt-2 group-hover:text-sky-400 transition cursor-default">Momentum Space Correlation Functions in 2D Galilean Conformal Algebra</h3>
+                <p class="text-sm text-slate-500 mt-2 italic">A. Chetia, N. Kajuri, C. Prakash</p>
+                <a href="https://arxiv.org/abs/2603.24635" class="inline-block mt-4 text-[10px] font-bold text-slate-400 hover:text-white uppercase tracking-widest border border-slate-800 px-3 py-1 rounded">Read on arXiv</a>
+            </div>
 
-            <section id="about" class="wrapper style1 fullscreen fade-up">
-                <div class="inner">
-                    <h1>Chandra Prakash</h1>
-                    <p>An IIT Guwahati graduate with a passion for understanding the universe at its most fundamental level.</p>
-                    <p>I am motivated by a deep curiosity for learning and strive to explore concepts in as much depth as possible. I believe in <strong>making science accessible</strong> by sharing resources as widely as possible to help the next generation of researchers, which is why I've provided my notes in the notes section where the derivations are as explicit as possible. My work focuses on quantum field theory in curved spacetime, quantum aspects of gravity, inflation, Reheating, black holes in cosmological coupling, holographic duality, unitary evaporation of black holes, string theory, and other gravity-related aspects. I possess a decent understanding of many areas related to gravity but am currently focusing on <strong>honing my skills towards holography</strong>.</p>
-                    <ul class="actions">
-                        <li><a href="#projects" class="button scrolly">View My Projects</a></li>
-                    </ul>
-                </div>
-            </section>
+           <div class="group">
+    <span class="mono text-[10px] text-sky-500 font-bold uppercase tracking-tighter">2026 // arXiv:2603.24635</span>
+    <h3 class="text-2xl font-bold text-white mt-2 group-hover:text-sky-400 transition cursor-default">Cosmological correlators from the Inflation end to CMB sky via reheating</h3>
+    <p class="text-sm text-slate-500 mt-2 italic">Chandra Prakash, Debaprasad Maity</p>
+    <div class="mt-4 flex gap-4">
+        <a href="https://arxiv.org/abs/2603.24635" class="text-[10px] font-bold text-slate-400 hover:text-white uppercase tracking-widest border border-slate-800 px-3 py-1 rounded">Read on arXiv</a>
+    </div>
+</div>
 
-            <section id="projects" class="wrapper style2 spotlights">
-                <section>
-                    <a href="#" class="image"><img src="images/pic01.jpg" alt="An image representing your project." data-position="center center" /></a>
-                    <div class="content">
-                        <div class="inner">
-                            <h2>MSc Thesis: From Quantum Fields to Cosmic Structures: Tracing the Early Universe through Correlation Functions</h2>
-                            <p><strong>Under the kind guidance of Dr. Debaprashad Maity</strong></p>
-                            <p>Our current understanding of gravity is limited by observational constraints. While building a particle accelerator the size of the solar system isn't feasible, the universe has provided an alternative. Inflation, the highest-energy process in the early universe, acts as a natural laboratory. My thesis explored how particle production and quantum field dynamics during this era imprint on cosmological correlation functions, with a focus on non-Gaussianity and observable signatures in the CMB.</p>
-                            <ul class="actions">
-                                <li><a href="thesis.pdf" class="button" target="_blank">View Thesis (PDF)</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-                <section>
-                    <a href="#" class="image"><img src="images/pic02.jpg" alt="An image representing your project." data-position="top center" /></a>
-                    <div class="content">
-                        <div class="inner">
-                            <h2>BSc Thesis: Wave particle duality and Quantum Field Theory</h2>
-                            <p><strong>Under the kind guidance of Prof. Lalita Rane</strong></p>
-                            <p>My undergraduate thesis was driven by a fundamental question: how does the de Broglie hypothesis survive in Quantum Field Theory? I was captivated by the problem that for ultra-relativistic particles, the corresponding wavelength becomes extremely small. This led me to investigate whether such particles exhibit wave-particle duality at all. My research explored the eigenvalue of the momentum operator in QFT to conclude that the de Broglie hypothesis is a statement on the eigenvalue of the momentum eigenstate.</p>
-                        </div>
-                    </div>
-                </section>
-                <section>
-                    <a href="#" class="image"><img src="images/pic03.jpg" alt="An image representing your project." data-position="25% 25%" /></a>
-                    <div class="content">
-                        <div class="inner">
-                            <h2>Black Hole Entropy using Brick Wall Method</h2>
-                            <p>This project studied the statistical interpretation of black hole entropy using 't Hooft's brick wall method. I generalized the entire process and expressed the final form in terms of the metric coefficient.</p>
-                            <ul class="actions">
-                                <li><a href="https://arxiv.org/abs/2010.10868" class="button" target="_blank">View Preprint on arXiv</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-                <section>
-                    <a href="#" class="image"><img src="images/pic04.jpg" alt="An image representing your project." data-position="center center" /></a>
-                    <div class="content">
-                        <div class="inner">
-                            <h2>Entanglement Entropy via Heat Kernel and Replica Trick</h2>
-                            <p>I extended the concept of entanglement entropy from quantum mechanics to quantum field theory and applied it to spacetimes with a Lorentz-violating field. My work explores how such a field affects entanglement entropy and finds that it converges with the one derived from Bekenstein's arguments. I also investigated two widely used procedures for calculating entanglement entropy, finding that the heat kernel method requires certain modifications in the presence of non-minimal coupling.</p>
-                            <ul class="actions">
-                                <li><a href="EE in SME.pdf" class="button" target="_blank">View Paper (PDF)</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-                <section>
-                    <a href="#" class="image"><img src="images/pic05.jpg" alt="An image representing your project." data-position="center center" /></a>
-                    <div class="content">
-                        <div class="inner">
-                            <h2>Rotating Black Holes in Lorentz-Violating Gravity (Black Hole Shadow)</h2>
-                            <p>This project was completed a while ago, but due to a collaborator's lack of availability, it was not put on arXiv. I am currently reviving the work with the hope of submitting it soon. The research explores how the Newman-Janis algorithm, a method I had learned, can be applied to models of Lorentz-violating gravity.</p>
-                            <ul class="actions">
-                                <li><a href="Newman Janis in BumbleBee.pdf" class="button" target="_blank">View Details on Newman-Janis Algorithm (PDF)</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-                <section>
-                    <a href="#" class="image"><img src="images/pic06.jpg" alt="An image representing your project." data-position="center center" /></a>
-                    <div class="content">
-                        <div class="inner">
-                            <h2>Hartree-Fock Method for He ground state energy</h2>
-                            <p>After learning the Hartree-Fock method in class, I was motivated to implement it to gain a deeper insight into its workings. This project explores the method's application in calculating the ground state energy of a Helium atom, demonstrating a hands-on approach to theoretical concepts.</p>
-                            <ul class="actions">
-                                <li><a href="https://colab.research.google.com/github/PhysicsiPhile/Hartree-Fock/blob/main/Hartree%20Fock%20For%20He.ipynb" class="button" target="_blank">View Jupyter Notebook</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-            </section>
 
-            <section id="notes" class="wrapper style3 fade-up">
-                <div class="inner">
-                    <h2>Notes</h2>
-                    <p>This is my personal space to show my engagement with the academic community. Here are some of my notes and ongoing work.</p>
-                    <div class="features">
-                        <section>
-                            <span class="icon solid major fa-pen-nib"></span>
-                            <h3>General Relativity</h3>
-                            <p>My hand-written notes on General Relativity from lectures by Professor Bhibhas Ranjan Majhi, one of the best professors at IIT Guwahati. These notes cover foundational concepts and gravitational phenomena.</p>
-                            <a href="https://drive.google.com/file/d/1QE0X7HjovSNtetwUO4X8BdfiVoTAhUhK/view?usp=drivesdk" class="button" target="_blank">View Notes</a>
-                        </section>
-                        <section>
-                            <span class="icon solid major fa-microscope"></span>
-                            <h3>Conformal Field Theory</h3>
-                            <p>These are the most detailed notes on Conformal Field Theory that exist, including derivations not found in many papers and books. They serve as an ideal resource for learning and mastering the subject.</p>
-                            <a href="CFT notes.pdf" class="button" target="_blank">View Notes</a>
-                        </section>
-                         <section>
-                            <span class="icon solid major fa-infinity"></span>
-                            <h3>String Theory</h3>
-                            <p>Dedicated notes on String Theory are currently being developed to capture explicit derivations and advanced concepts in the subject.</p>
-                            <a href="stringnotes.pdf" class="button" target="_blank">View Notes</a>
-                        </section>
-                        <section>
-                            <span class="icon solid major fa-book"></span>
-                            <h3>Cosmology</h3>
-                            <p>My current working notes on Cosmology, covering key theoretical models. This section is actively being expanded.</p>
-                            <a href="Cosmology.pdf" class="button" target="_blank">View Notes</a>
-                        </section>
-                    </div>
-                </div>
-            </section>
-
-            <section id="contact" class="wrapper style1 fade-up">
-                <div class="inner">
-                    <h2>Contact Me</h2>
-                    <p>I'd love to connect and discuss my work. Feel free to reach out via email or professional networks.</p>
-                    <div class="split style1">
-                        <section>
-                            <form action="https://formspree.io/f/mqaddpnj" method="POST">
-                                <div class="fields">
-                                    <div class="field half">
-                                        <label for="name">Name</label>
-                                        <input type="text" name="name" id="name" />
-                                    </div>
-                                    <div class="field half">
-                                        <label for="email">Email</label>
-                                        <input type="text" name="_replyto" id="email" />
-                                    </div>
-                                    <div class="field">
-                                        <label for="message">Message</label>
-                                        <textarea name="message" id="message" rows="5"></textarea>
-                                    </div>
-                                </div>
-                                <ul class="actions">
-                                    <li><button type="submit" class="button submit">Send Message</button></li>
-                                </ul>
-                            </form>
-                        </section>
-                        <section>
-                            <ul class="contact">
-                                <li>
-                                    <h3>Email</h3>
-                                    <a href="mailto:chandra.pp@alumni.iitg.ac.in">chandra.pp@alumni.iitg.ac.in</a>
-                                </li>
-                                <li>
-                                    <h3>Social</h3>
-                                    <ul class="icons">
-                                        <li><a href="https://www.linkedin.com/in/chandra-prakash-a98295240/" class="icon brands fa-linkedin-in" target="_blank"><span class="label">LinkedIn</span></a></li>
-                                        <li><a href="https://github.com/PhysicsiPhile" class="icon brands fa-github" target="_blank"><span class="label">GitHub</span></a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <h3>CV/Resume</h3>
-                                    <a href="CV.pdf">View My CV (PDF)</a>
-                                </li>
-                            </ul>
-                        </section>
-                    </div>
-                </div>
-            </section>
+            <div class="group">
+                <span class="mono text-[10px] text-slate-600 font-bold uppercase tracking-tighter">2020 // arXiv:2010.10868</span>
+                <h3 class="text-2xl font-bold text-white mt-2 group-hover:text-sky-400 transition cursor-default">Generalized Brick Wall Method for Stationary Axisymmetric Spacetimes</h3>
+                <p class="text-sm text-slate-500 mt-2 italic">Chandra Prakash</p>
+                <a href="https://arxiv.org/abs/2010.10868" class="inline-block mt-4 text-[10px] font-bold text-slate-400 hover:text-white uppercase tracking-widest border border-slate-800 px-3 py-1 rounded">Read on arXiv</a>
+            </div>
 
         </div>
+    </section>
 
-        <footer id="footer" class="wrapper style1-alt">
-            <div class="inner">
-                <ul class="menu">
-                    <li>&copy; 2025 Chandra. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-                </ul>
+    <section class="mb-32">
+        <h2 class="section-header">Research Domains</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="math-hero">
+                <h3 class="text-white font-bold mb-4 uppercase text-xs tracking-widest">Holography </h3>
+                <p class="text-sm text-slate-400 mb-6 leading-relaxed">Investigation into the unitary evaporation of black holes, holographic duality, and entanglement entropy calculations using the replica trick.</p>
+                <div class="opacity-40">$$S = \text{min}_{\gamma_A} \left[ \frac{\text{Area}(\gamma_A)}{4G_N} \right]$$</div>
             </div>
-        </footer>
+            <div class="math-hero">
+                <h3 class="text-white font-bold mb-4 uppercase text-xs tracking-widest">Gravity & QFT</h3>
+                <p class="text-sm text-slate-400 mb-6 leading-relaxed">Analyzing Lorentz-violating gravity, inflation/reheating, and the dynamics of quantum field theory in curved spacetime.</p>
+                <div class="opacity-40">$$G_{\mu\nu} + \Lambda g_{\mu\nu} = 8\pi G T_{\mu\nu}$$</div>
+            </div>
+        </div>
+    </section>
 
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/jquery.scrollex.min.js"></script>
-        <script src="assets/js/jquery.scrolly.min.js"></script>
-        <script src="assets/js/browser.min.js"></script>
-        <script src="assets/js/breakpoints.min.js"></script>
-        <script src="assets/js/util.js"></script>
-        <script src="assets/js/main.js"></script>
+    <section class="mb-32">
+        <h2 class="section-header">Explicit Derivation Notes</h2>
+        <p class="text-slate-500 text-sm mb-10 max-w-xl">Deep-dive resources focusing on complete mathematical transparency.</p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <a href="CFT notes.pdf" class="glass-card p-6 rounded-xl block">
+                <h4 class="font-bold text-white mb-2 text-xs uppercase tracking-wider">CFT</h4>
+                <p class="text-[10px] text-slate-500">2D Conformal dynamics & Virasoro algebra.</p>
+            </a>
+            <a href="Cosmology.pdf" class="glass-card p-6 rounded-xl block">
+                <h4 class="font-bold text-white mb-2 text-xs uppercase tracking-wider">Cosmology</h4>
+                <p class="text-[10px] text-slate-500">Inflation and early universe thermal history.</p>
+            </a>
+            <a href="stringnotes.pdf" class="glass-card p-6 rounded-xl block">
+                <h4 class="font-bold text-white mb-2 text-xs uppercase tracking-wider">String Theory</h4>
+                <p class="text-[10px] text-slate-500">Worldsheet dynamics & Polyakov action.</p>
+            </a>
+            <a href="https://drive.google.com/file/d/1QE0X7HjovSNtetwUO4X8BdfiVoTAhUhK/view" class="glass-card p-6 rounded-xl block">
+                <h4 class="font-bold text-white mb-2 text-xs uppercase tracking-wider">General Relativity</h4>
+                <p class="text-[10px] text-slate-500">Foundational lecture notes (Prof. B.R. Majhi).</p>
+            </a>
+        </div>
+    </section>
 
-    </body>
+    <section class="mb-32">
+        <h2 class="section-header">Academic Theses</h2>
+        <div class="space-y-6">
+            <div class="glass-card p-8 rounded-2xl">
+                <h3 class="text-xl font-bold text-white">MSc: From Quantum Fields to Cosmic Structures</h3>
+                <p class="text-sm text-sky-500 italic mt-1">Adv: Dr. Debaprashad Maity (IITG)</p>
+                <p class="text-sm text-slate-400 mt-4 leading-relaxed">
+                    Tracing particle production and quantum field dynamics during inflation and their imprints on cosmological correlation functions, specifically non-Gaussianity in the CMB.
+                </p>
+                <a href="thesis.pdf" class="mt-6 inline-block text-[10px] font-bold text-white uppercase tracking-widest border-b border-white pb-1">View Full Thesis (PDF)</a>
+            </div>
+            <div class="glass-card p-8 rounded-2xl">
+                <h3 class="text-xl font-bold text-white">BSc: Wave particle duality and QFT</h3>
+                <p class="text-sm text-sky-500 italic mt-1">Adv: Prof. Lalita Rane</p>
+                <p class="text-sm text-slate-400 mt-4 leading-relaxed">
+                    An inquiry into the survival of the de Broglie hypothesis in the ultra-relativistic limit through momentum operator eigenvalues in QFT.
+                </p>
+            </div>
+        </div>
+    </section>
 
+    <section class="mb-32">
+        <div class="max-w-xl mx-auto p-12 glass-card rounded-3xl text-center">
+            <h2 class="text-white font-black text-3xl mb-4 tracking-tighter">Inquiry</h2>
+            <p class="text-slate-500 text-sm mb-10">Available for technical discussion or collaboration.</p>
+            <form action="https://formspree.io/f/mqaddpnj" method="POST" class="space-y-4 text-left">
+                <input type="email" name="_replyto" placeholder="Your Email" class="w-full p-4 rounded bg-slate-950 border border-slate-800 text-sm focus:border-sky-500 outline-none transition">
+                <textarea name="message" placeholder="Message..." rows="4" class="w-full p-4 rounded bg-slate-950 border border-slate-800 text-sm focus:border-sky-500 outline-none transition"></textarea>
+                <button type="submit" class="w-full py-4 bg-sky-500 text-slate-950 font-bold uppercase text-[10px] tracking-[0.3em] rounded-full hover:bg-sky-400 transition">Submit Transmission</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="py-12 border-t border-slate-900 text-center text-[10px] font-mono text-slate-700 uppercase tracking-[0.6em]">
+        Chandra Prakash // 2026 // IIT Guwahati
+    </footer>
+
+</body>
 </html>
-
