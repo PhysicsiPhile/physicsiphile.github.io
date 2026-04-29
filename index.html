@@ -131,10 +131,46 @@
         </div>
     </section>
 
-    <section class="mb-32">
-        <h2 class="section-header">The Stack of Books</h2>
-        <p class="text-sm text-slate-500 mb-8 max-w-2xl">A curated list of the 33+ volumes currently serving as the foundation for my explicit derivations.</p>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-2 mono border-t border-slate-800 pt-8">
+
+<style>
+    .library-section {
+        position: relative;
+        width: 100%;
+        /* We use the image as a standard background but ensure it spans the whole height */
+        background-image: linear-gradient(rgba(3, 7, 18, 0.94), rgba(3, 7, 18, 0.94)), 
+                          url('books.png');
+        background-size: 100% auto; /* Matches image width to section, height follows naturally */
+        background-position: top center;
+        background-repeat: no-repeat;
+        border: 1px solid rgba(51, 65, 85, 0.3);
+    }
+
+    .book-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 1.5rem;
+    }
+
+    .book-item {
+        padding: 0.75rem 0;
+        border-bottom: 1px solid rgba(51, 65, 85, 0.2);
+        color: rgba(226, 232, 240, 0.8);
+        transition: color 0.3s;
+    }
+
+    .book-item:hover {
+        color: #38bdf8;
+    }
+</style>
+
+<section class="library-section mb-32 rounded-3xl overflow-hidden">
+    <div class="p-8 md:p-20 relative z-10">
+        <h2 class="section-header">The Explorer's Stack</h2>
+        <p class="text-sm text-slate-400 mb-16 max-w-2xl leading-relaxed">
+            The physical foundation of my research. A collection of 37+ volumes representing a refusal to accept surface-level physics. 
+            <br><span class="text-sky-500 font-bold">        </p>
+
+        <div class="book-grid mono">
             <div class="book-item">Quantum Mechanics: Fundamentals <span class="text-slate-600">(Gottfried, Yan)</span></div>
             <div class="book-item">Nonlinear Dynamics and Chaos <span class="text-slate-600">(Strogatz)</span></div>
             <div class="book-item">Quantization of Gauge Systems <span class="text-slate-600">(Henneaux, Teitelboim)</span></div>
@@ -164,12 +200,16 @@
             <div class="book-item">QFT and the Standard Model <span class="text-slate-600">(Schwartz)</span></div>
             <div class="book-item">Conformal Field Theory <span class="text-slate-600">(Di Francesco et al.)</span></div>
             <div class="book-item">String Theory Vol I-II <span class="text-slate-600">(Polchinski)</span></div>
-            <div class="book-item">Primordial Cosmology <span class="text-slate-600">(Peter, Uzan)</span></div>
+            <div class="book-item">Primordial Cosmology Vol I-II <span class="text-slate-600">(Peter, Uzan)</span></div>
             <div class="book-item">Gravitation <span class="text-slate-600">(Misner, Thorne, Wheeler)</span></div>
-	    <div class="book-item">Introduction to the AdS/CFT Correspondence <span class="text-slate-600">(Nastase)</span></div>
         </div>
-    </section>
+    </div>
+</section>
 
+
+
+
+</section>
     <section class="mb-32">
         <div class="max-w-xl mx-auto p-12 glass-card rounded-3xl text-center">
             <h2 class="text-white font-black text-3xl mb-4 tracking-tighter">Inquiry</h2>
